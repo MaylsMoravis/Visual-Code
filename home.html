@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="./home.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="header-text">
+                <h1 id="header-title">You are welcome</h1>
+            </div>
+            <div class="header-btn">
+                <!-- Tillarni o'zgartirish -->
+                <button id="english-btn">English</button>
+                <button id="russian-btn">Русский</button>
+                <button id="uzbek-btn">O'zbek</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="section">
+            <div class="form-container">
+                <!-- Ism inputi -->
+                <label for="name" id="label-name">Name:</label>
+                <input type="text" id="name" maxlength="30" required>
+
+                <!-- Yosh inputi -->
+                <label for="age" id="label-age">Age:</label>
+                <input type="number" id="age" max="100" required>
+
+                <!-- Tug'ilgan sanasi inputi -->
+                <label for="birthdate" id="label-birthdate">Birthdate:</label>
+                <input type="month" id="birthdate" required>
+
+                <!-- Jins inputi -->
+                <label for="gender" id="label-gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <!-- Yuborish tugmasi -->
+                <button id="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
